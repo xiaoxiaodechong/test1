@@ -22,4 +22,5 @@ reset的恢复可简单理解为从commit选择需要回退的版本，然后将
 	url = https://用户名:密码@github.com/xiaoxiaodechong/test1.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 
+分支管理:未完待续
 
