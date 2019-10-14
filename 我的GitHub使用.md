@@ -15,3 +15,8 @@ git  push   同步到github远程仓库
 
 git  reset  HEAD  "文件名"  撤回指定提交文件到暂存区操作  ，不写文件撤回上一步文件的操作
 
+
+更改git 中配置文件config[remote "origin"]
+	url = https://用户名:密码@github.com/xiaoxiaodechong/test1.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+
