@@ -7,6 +7,14 @@ git commit  -m " 文件操作说明 "
 
 git   config  --list   查看配置文件
 
+git -log  打印日志  （显示快照）
+
+git -log  --decorate  显示HEAD 指针指向
+
+git -log  --decorate   --oneline   显示一个快照
+
+git -log  --decorate   --oneline   --graph --all   以图形化显示分支和快照
+
 git  clone  "github仓库文件名"
 
 git   status   查看文件的的状态
@@ -25,7 +33,7 @@ git  commit --amend 执行选项commit   提交命令 git会更改的最近修�
 
 删除文件  git  rm  文件名  git会和缓存区的文件进行对比，所以要进行返回上一操作 用git -reset --soft HEAD^
 
-git checkout  -- 文件名     恢复文件
+***git    checkout  -- 文件名     恢复文件***
 
 git  rm -f  强制删除（删除暂存区和工作区 ）
 
@@ -33,7 +41,27 @@ git    rm  -cached      (删除暂存区文件)
 
 修改名字   mv  旧名字  新名字
 
-分支管理:未完待续
+分支管理:
+
+主分支  master
+
+创建分支 git  branch  分支名
+
+master.分支名
+
+***git  checkout   分支名 切换分支***
+
+实际开发不止一个分支
+
+合并分支：git  merge 
+
+如果遇到命名相同文件时会报错，请修改冲突文件需要改内容   
+
+消除冲突： git commit  -m  "fix  conflicts"
+
+删除分支   git  branch  -b 分支名
+
+ 
 
 
 
