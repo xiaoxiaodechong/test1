@@ -17,10 +17,25 @@ git  reset  -hard HEAD^  "文件名"  撤回指定提交文件到暂存区操作
 reset的恢复可简单理解为从commit选择需要回退的版本，然后将对应的版本移动到暂存区，此时，你的本地工作区并没有恢复，
 也就是文件没有还原，reset动的是暂存区文件，所以这时本地文件和暂存区文件产生冲突，也就是不相同，所以会提示红色
 
-
 更改git 中配置文件config[remote "origin"]
 	url = https://用户名:密码@github.com/xiaoxiaodechong/test1.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
 
+git  commit --amend 执行选项commit   提交命令 git会更改的最近修改
+
+删除文件  git  rm  文件名  git会和缓存区的文件进行对比，所以要进行返回上一操作 用git -reset --soft HEAD^
+
+git checkout  -- 文件名     恢复文件
+
+git  rm -f  强制删除（删除暂存区和工作区 ）
+
+git    rm  -cached      (删除暂存区文件)
+
+修改名字   mv  旧名字  新名字
+
 分支管理:未完待续
+
+
+
+ 
 
