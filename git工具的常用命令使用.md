@@ -67,3 +67,6 @@ master.分支名
 
  
 
+https://blog.csdn.net/qq_26230421/article/details/79232219
+
+VMware虚拟机配置端口转发（端口映射），实现远程访问
